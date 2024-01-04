@@ -1,11 +1,15 @@
 loki:
   enabled: true
+  persistence:
+    enabled: true
+    storagClass: defalut
+    size: 5Gi
 
 promtail:
   enabled: true
 
 grafana:
-  enabled: false
+  enabled: true
   sidecar:
     datasources:
       enabled: true
