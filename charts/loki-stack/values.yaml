@@ -2,8 +2,9 @@ loki:
   enabled: true
   persistence:
     enabled: true
-    storagClass: defalut
-    size: 5Gi
+    storagClass: defalutretain
+    size: 10Gi
+  existingClaim: loki-pvc
 
 promtail:
   enabled: true
